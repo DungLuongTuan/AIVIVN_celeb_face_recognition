@@ -25,6 +25,11 @@ Face embedding mình sử dụng ở đây là arcface (theo repo: https://githu
 Mình sử dụng mô hình tốt nhất đã có để dự đoán nhãn trên tập public test, rồi dùng một phần dữ liệu mà mô hình dự đoán với độ chính xác cao để làm dữ liệu thêm. Sau đó mình train lại mô hình với tập train + dữ liệu thêm này, kết quả thu được tốt hơn so với trước đó,
 
 ## Chạy chương trình
+Clone insightface
+```
+git clone https://github.com/deepinsight/insightface.git
+```
+
 Sinh embedding
 ```
 python3 prepare_data.py --data_path="thư mục data cuộc thi"
